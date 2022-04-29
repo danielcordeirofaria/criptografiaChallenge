@@ -34,7 +34,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: inline;
+    display: flex;
     height: auto;
     text-align: center;
     color: #343A40;
