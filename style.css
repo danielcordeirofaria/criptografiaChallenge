@@ -44,7 +44,7 @@ header {
     font-size: 24px;
     line-height: 120%;
     padding: 30px;
-    margin: 20px;
+    margin: 40px;
 }
 
 body {
@@ -103,7 +103,7 @@ form {
 .botoes{
     text-align: center
 }
-.botao-criptografar {
+.botaoCriptografar {
     width: 328px;
     height: 67px;
     background-color: #0A3871;
@@ -119,7 +119,7 @@ form {
 
 }
 
-.botao-descriptografar {
+.botaoDescriptografar {
     width: 328px;
     height: 67px;
     background-color: #0A3871;
