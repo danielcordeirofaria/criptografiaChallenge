@@ -123,7 +123,6 @@ form {
     text-align: center;
     border: initial;
     font-size: large;
-
 }
 
 .botaoDescriptografar {
@@ -191,4 +190,19 @@ main {
 
 .figuraDoQuadro{
     width: 100%;
+}
+
+.botaoCopiar {
+    width: 90%;
+    height: 67px;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 24px;
+    display: inline;
+    margin: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    border: initial;
+    font-size: large;
 }
