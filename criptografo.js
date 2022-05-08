@@ -8,23 +8,26 @@ botaoCriptografar.addEventListener("click", function(){
 
     var substituindoLetraE = textoParaCriptografar.replaceAll("e","enter");
 
-    var SubstituindoLetraI = substituindoLetraE.replaceAll("i","imes");
+    var substituindoLetraI = substituindoLetraE.replaceAll("i","imes");
     
-    var SubstituindoLetraA = SubstituindoLetraI.replace("a","ai");
+    var substituindoLetraA = substituindoLetraI.replaceAll("a","ai");
 
-    var SubstituindoLetraO = SubstituindoLetraA.replace("o","obter");
+    var substituindoLetraO = substituindoLetraA.replaceAll("o","obter");
 
-    var SubstituindoLetraU = SubstituindoLetraO.replace("u","ufat");
+    var substituindoLetraU = substituindoLetraO.replaceAll("u","ufat");
 
     var exclusaoFiguradoQuadro = document.querySelector(".itensParaExcluir");
-    exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro);
-    
+
+    exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro); 
+
+    novoElemento();
 });
 
+function novoElemento() {
+    var elementoCriptografado = document.createElement("div");
+    var textoCriptografado = document.createTextNode(".substituindoLetraU");
 
+    elementoCriptografado.appendChild(textoCriptografado);
 
-//function textoParaCopiar{
-  //  var textoCriptografado = SubstituindoLetraU;
-    //textoCriptografado.appendChild()
-//}
-
+console.log(elementoCriptografado);
+};
