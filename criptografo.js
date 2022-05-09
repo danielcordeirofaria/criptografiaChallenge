@@ -20,12 +20,41 @@ botaoCriptografar.addEventListener("click", function(){
 
     exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro); 
 
-    novoElemento();
+    console.log(substituindoLetraU);
+
+    novoElemento(exclusaoFiguradoQuadro);
 });
+var botaoDescriptografar = document.querySelector(".botaoDescriptografar");
+
+botaoDescriptografar.addEventListener("click", function(){
+
+    var textArea = document.querySelector("#textoInserido");
+
+    var textoParaDescriptografar = textArea.value
+
+    var substituindoEnter = textoParaDescriptografar.replaceAll("enter", "e");
+
+    var substituindoImes = substituindoEnter.replaceAll("imes", "i");
+
+    var substituindoAi = substituindoImes.replaceAll("ai", "a")
+
+    var substituindoObter = substituindoAi.replaceAll("obter", "o");
+
+    var substituindoUfat = substituindoObter.replaceAll("ufat" , "u");
+
+    var exclusaoFiguradoQuadro = document.querySelector(".itensParaExcluir");
+
+    exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro); 
+
+    console.log(substituindoUfat);
+
+    novoElemento();
+})
+
 
 function novoElemento() {
     var elementoCriptografado = document.createElement("div");
-    var textoCriptografado = document.createTextNode(".substituindoLetraU");
+    var textoCriptografado = document.createTextNode(".substituindoLetraU")
 
     elementoCriptografado.appendChild(textoCriptografado);
 
