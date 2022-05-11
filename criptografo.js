@@ -28,6 +28,8 @@ botaoCriptografar.addEventListener("click", function(){
 
     novoElemento(substituindoLetraU);
 
+    return substituindoLetraU;
+
 });
 var botaoDescriptografar = document.querySelector(".botaoDescriptografar");
 
@@ -59,6 +61,7 @@ botaoDescriptografar.addEventListener("click", function(){
 
     novoElemento(substituindoUfat);
 
+    return substituindoUfat;
 });
 
 function novoElemento(textoFinal) {
@@ -69,6 +72,8 @@ function novoElemento(textoFinal) {
     elementoCriptografado.classList.add("respostaFinal");
 
     console.log(elementoCriptografado);
+
+    return textoFinal;
 
 };
 
