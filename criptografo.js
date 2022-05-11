@@ -78,11 +78,18 @@ function novoElemento(textoFinal) {
 };
 
 function copyToClipBoard() {
+    var elementoCriptografado = document.querySelector(".textoFinal");
 
-    var content = document.querySelector(".textoFinal");
-    
-    content.select();
-    document.execCommand('botaoCopiar');
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(`${elementoCriptografado.textContent}`)
+      .then(() => {
+        console.log('Copied to clipboard successfully.');
+        window.location.reload(); //recarregar a pagina
+      }, (err) => {
+        console.log('Failed to copy the text to clipboard.', err);
+      });
+    } else if (window.clipboardData) {
+      window.clipboardData.setData("Text", input);
+    }
 
-    alert("Copied!");
-};
+  }
