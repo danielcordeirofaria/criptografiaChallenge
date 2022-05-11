@@ -18,11 +18,16 @@ botaoCriptografar.addEventListener("click", function(){
 
     var exclusaoFiguradoQuadro = document.querySelector(".itensParaExcluir");
 
+    if(exclusaoFiguradoQuadro){
+
     exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro); 
+
+    };
 
     console.log(substituindoLetraU);
 
-    novoElemento(exclusaoFiguradoQuadro);
+    novoElemento(substituindoLetraU);
+
 });
 var botaoDescriptografar = document.querySelector(".botaoDescriptografar");
 
@@ -44,19 +49,35 @@ botaoDescriptografar.addEventListener("click", function(){
 
     var exclusaoFiguradoQuadro = document.querySelector(".itensParaExcluir");
 
+    if(exclusaoFiguradoQuadro){
+
     exclusaoFiguradoQuadro.parentNode.removeChild(exclusaoFiguradoQuadro); 
+
+    };
 
     console.log(substituindoUfat);
 
-    novoElemento();
-})
+    novoElemento(substituindoUfat);
 
+});
 
-function novoElemento() {
-    var elementoCriptografado = document.createElement("div");
-    var textoCriptografado = document.createTextNode(".substituindoLetraU")
+function novoElemento(textoFinal) {
+    var elementoCriptografado = document.querySelector(".textoFinal");
+    elementoCriptografado.innerHTML = textoFinal;
+    console.log(elementoCriptografado);
 
-    elementoCriptografado.appendChild(textoCriptografado);
+    elementoCriptografado.classList.add("respostaFinal");
 
-console.log(elementoCriptografado);
+    console.log(elementoCriptografado);
+
+};
+
+function copyToClipBoard() {
+
+    var content = document.querySelector(".textoFinal");
+    
+    content.select();
+    document.execCommand('botaoCopiar');
+
+    alert("Copied!");
 };

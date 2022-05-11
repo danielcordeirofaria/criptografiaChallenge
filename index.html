@@ -32,14 +32,16 @@
                     
                 </main>
                 <div class="quadroDeRespostas">
+                    <p class="textoFinal" id="textoFinal"></p>
                     <div class="itensParaExcluir">
                         <img class="figuraDoQuadro" src="desenhoQuadroDeResposta.svg" alt="quadroDeResposta">
                         <p class="semDados">Nenhuma mensagem encontrada</p>
                         <p class="digiteOTexto">Digite um texto que você pretende Descriptografar</p>
                     </div>
-                    <button class="botaoCopiar">Copiar</button>  
+                    <div>
+                        <button onclick="copyToClipBoard()" class="botaoCopiar">Copiar</button>  
+                    </div>
                 </div>
-               
             </div>
         </div>
         <script src="criptografo.js"></script>
