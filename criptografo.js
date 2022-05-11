@@ -12,7 +12,7 @@ botaoCriptografar.addEventListener("click", function(){
     
     var substituindoLetraA = substituindoLetraI.replaceAll("a","ai");
 
-    var substituindoLetraO = substituindoLetraA.replaceAll("o","obter");
+    var substituindoLetraO = substituindoLetraA.replaceAll("o","ober");
 
     var substituindoLetraU = substituindoLetraO.replaceAll("u","ufat");
 
@@ -45,9 +45,9 @@ botaoDescriptografar.addEventListener("click", function(){
 
     var substituindoAi = substituindoImes.replaceAll("ai", "a")
 
-    var substituindoObter = substituindoAi.replaceAll("obter", "o");
+    var substituindoOber = substituindoAi.replaceAll("ober", "o");
 
-    var substituindoUfat = substituindoObter.replaceAll("ufat" , "u");
+    var substituindoUfat = substituindoOber.replaceAll("ufat" , "u");
 
     var exclusaoFiguradoQuadro = document.querySelector(".itensParaExcluir");
 
